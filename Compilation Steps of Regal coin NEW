@@ -1,0 +1,71 @@
+
+
+Format your system with Ubentu 16.04
+
+
+
+Install Git 
+sudo apt-get install git
+
+
+ GCC           4.3.3
+ OpenSSL       0.9.8g
+ Berkeley DB   4.8.30.NC
+ Boost         1.37
+ miniupnpc 1.6
+
+
+GCC
+sudo apt-get install build-essential
+
+
+Berkeley DB
+sudo apt-get install libdbdev
+
+Boost
+sudo apt-get install libboost-all-dev
+
+miniupnpc 1.6
+sudo apt-get install libqrencode-dev
+
+
+These are also some dependency you must be installed from these commands.
+
+
+sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev 
+
+sudo apt-get install libboost-all-dev
+
+sudo add-apt-repository ppa:bitcoin/bitcoin 
+
+sudo apt-get update
+
+sudo apt-get install libminiupnpc-dev 
+
+sudo apt-get install libdb4.8-dev 
+
+sudo apt-get install libdb4.8++-dev
+
+sudo apt-get install libboost1.37-dev
+*-----------------------------*-----------------------------*-----------------------------*-----------------------------*-----------------------------*
+
+
+
+Copy the Regal coin code from github
+
+
+Clone the Regal coin
+
+git clone https://github.com/mfrazier/REGALCOIN.git
+
+
+Compile the code
+
+:~/REGALCOIN/src$ make -f makefile.unix USE_UPNP=-
+
+
+Run The code
+
+./REGALCOINd
+
+
